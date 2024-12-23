@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem Alshamsi Personal E-Portfolio</title>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+    <link rel="stylesheet" href="About.css">
+    <script src="https://kit.fontawesome.com/659fdd592e.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script defer src="interests.js"></script>
+ 
+
+    <style>
+
+        body {
+
+            margin: 0;
+            font-family: 'Hack', monospace;
+            color: #fff;
+            background-color: black;
+        }
+
+        section {
+
+            Position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 600px;
+            padding: 100px 20vw;
+        }
+
+    </style>
+
+ 
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" class="emb">
+                <ul id = "sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+
+        <!--------------- sections/waves ----------------->
+
+        <section class="dark">
+
+             
+            <h1 class="headtext">Welcome</h1> 
+
+            <p class="hidden midalign">Welcome to the about section! Here you will learn more 
+                about all the personal details one would want to know,
+                to get to know me!
+            </p>
+
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div> 
+ 
+        </section >
+
+        <!--------------------- Where Im From Section -------------------------->
+
+        <div class="mildspacer yellow"></div>
+
+        
+        <section class="yellow">
+
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">Where Am I From?</h1>
+
+                <p class="hidden midalign">
+                I'm from the UAE!
+                For those who don't know, it stands for the United Arab Emirates. 
+                I live in the Abu Dhabi Emirate which is known
+                for it's various monuments, as well as the plethora of business oppurtunities that can emerge! 
+                Aside from that, it's a place I call my home. My family, and friends mostly live here.
+                I find myself always yearning to be back whenever I am seperated from my home!  
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="slide-2" src="AEstrip/ae1.jpg">
+                        <img id="slide-3" src="AEstrip/ae2.jpg">
+                        <img id="slide-4" src="AEstrip/ae3.jpg">
+                        <img id="slide-5" src="AEstrip/ae4.jpg">
+                        <img id="slide-6" src="AEstrip/ae5.jpg">
+                        <img id="slide-1" src="AEstrip/uae.jpg">
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-1"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+            
+            
+            <div class="stackedwave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+        </section>
+
+        <!----------------------- Why Computer Science Section ----------------------->
+
+        <div class="mildspacer orange"></div>
+       
+        <section class="orange">
+            
+            
+            <h1 class="headtext hidden">Why Am I Studying Computer Science?</h1>
+
+            <p class="hidden midalign hidden">
+
+                I've always been one to enjoy challenging my intelligence with puzzles, as to truly test my cognitive, 
+                and innovative mind. Computer programming, and generally, Computer Science as a subject has piqued my interest.
+                I find it to be a gateway into many of the endeavors I wish to undertake, things such as: Game developement, 
+                software developement, etc.
+                <br>
+                <br>
+                CS, is undoublty, one big puzzle to be solved, one with numerous levels, 
+                and I intend to solve it whole.
+
+            </p>
+
+            <a href="#" class="btn hidden">See My Work</a>
+
+            <div class="CSpand">
+
+                <figure class="card hidden"> <img src="CSp/CSp1.JPG"></figure>
+                <figure class="card hidden"> <img src="CSp/CSp2.JPG"></figure>
+                <figure class="card hidden"> <img src="CSp/CSp3.JPG"></figure>
+                <figure class="card hidden"> <img src="CSp/CSp4.JPG"></figure>
+                <figure class="card hidden"> <img src="CSp/CSp5.JPG"></figure>
+                <figure class="card hidden"> <img src="CSp/CSp6.JPG"></figure>
+ 
+            </div>
+            
+            
+        </section>
+
+        <div class="spacer layer3"></div>
+
+        <!----------------------- What Are My Interests? ----------------------------------->
+
+        <section class="dark">
+
+            <h1 class="headtext hidden">What Are My Interest?</h1>
+
+            <p class="hidden midalign">
+
+                I would say that I'm quite versatile in many things, so naturally I have many interest in a 
+                plethora of things.
+                <br>
+                <br>
+                I particularly enjoy activities that involve some form of challenge, be it mental or physical! 
+                Passing the time always seems easy when I play billiards, or videogames, even reading Japanese Manga.
+                <br>
+                <br>
+                Aside from that, I enjoy playing Tennis, Gokarting, as well as cycling! OOH, Wall-climbing as well!
+
+            </p>
+        
+
+        </section>
+
+        <div class="slider hidden">
+
+                <div id="ref-slider" data-mouse-down-at="0" data-prev-percentage="0" data-percentage="0">
+                    <img class="image" src="Interests/slidee1.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee2.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee3.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee4.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee5.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee6.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee7.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee8.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee9.jpg" draggable="false"/>
+                    <img class="image" src="Interests/slidee10.jpg" draggable="false"/>
+                    <img class="image" src="Interests/slidee11.JPG" draggable="false"/>
+                    <img class="image" src="Interests/slidee12.JPG" draggable="false"/>
+                </div>
+
+                <p class="hidden midalign">
+                    *click and drag to see pictures*
+                </p>  
+        </div>
+
+        <div class="spacer layer4"></div>
+
+        <section class="grey">
+
+            <h1 class="headtext hidden">FASHION</h1>
+
+            <p class="hidden">Thought that I would include the library of books that I have read to completion. 
+                If we ever meet, you could ask me about my thoughts!</p>
+
+        </section>
+
+        <section class="black">
+            <div class="UP">
+                <h1>Back To The top</h1>
+                <div class="icon">
+                    <a href="#header"> <i class="fa-solid fa-circle-arrow-up"></i> </a> </p>
+    
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <script>
+    
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px "; 
+        }
+        
+    </script>
+
+    <script src="stacked/interests.js"></script>
+    <script> CustomEase.create</script>
+</body>
+</html>
+
+

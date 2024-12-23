@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem Alshamsi Personal E-Portfolio</title>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transitions.css">
+    <script src="https://kit.fontawesome.com/659fdd592e.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+        
+</div>
+
+<div class="intro"> 
+    <h1 class="logo-header">
+        <span class="logo">Salem K.</span>
+        <span class="logo">Alshamsi</span>
+    </h1>
+    
+</div>    
+
+ 
+
+<div id="header">
+
+    <div class="container">
+        
+        <nav>
+            <img src="images/logo.png" class="emb">
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <!-- Header Slider Section -->
+         
+        <div class="slider" style="
+        --width: 250px;
+        --height: 250px;
+        --quantity: 10;">
+
+            <div class="list">
+
+                <div class="item" style="--position: 1"><img src="images_cycle/cycle1.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images_cycle/cycle3.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images_cycle/cycle4.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images_cycle/cycle5.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images_cycle/cycle6.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images_cycle/cycle7.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images_cycle/cycle8.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images_cycle/cycle9.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/Background.png" alt=""></div>
+                
+            </div>
+            
+        </div>
+
+        <div class="header-text">
+
+            <p>CS Student</p>
+
+            <h1>Greetings, This is <span>Salem Alshamsi</span><br>
+                A learning Programmer from the United Arab Emirates!
+            </h1>
+
+        </div>
+    </div>
+</div>
+
+<!-- about section -->
+
+<div id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="about-col-1 hidden">
+                <img src="images/about.PNG">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title hidden">About Me</h1>
+                <p class="hidden">
+                    
+                    Hello, as you know I am Salem Khamis Alshamsi.
+                    I am an Emirate student studying abroad in the United States
+                    of America. Currently, I am pursuing an undergraduate degree
+                    in Computer Science, and perhaps another degree as well!
+                    <br>
+                    <br>
+                    I am heavily interested in Programming as well as topics related
+                    to Computer Vision, AI, Game Development, etc. As you will see in this portfolio, that I
+                    had worked on projects that involve such concepts.
+                    <br>
+                    <br>
+                    If you would like to learn further about me, click on the more tab to traverse to my about page!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link hidden" onclick = "opentab('skills')">Skills</p>
+                    <p class="tab-links hidden" onclick = "opentab('experience')">Experiences</p>
+                    <p class="tab-links hidden" onclick = "opentab('education')">Education</p>
+                    <p class="tab-links hidden" onclick= "opentab('More')">More</p>
+                </div>
+
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Python</span><br>Well-versed in programming with Python</li>
+                        <li><span>Java</span><br>Well-versed in programming with Java</li>
+                        <li><span>Web Development</span><br>Experence with Web Development using HTML, CSS, & JavaScript.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>N/A</span><br>No on field Experences as of yet :/ .</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2023 - 2027</span><br>BBA in Computer Science from Cornell Universty (Go Big Red).</li>
+                        <br>
+                        <li><span>CS courses taken: </span><br> <i class="fa-solid fa-circle"></i> Intro To Computer Science (CS1110)<br> <i class="fa-solid fa-circle"></i> Object-Oriented Programming and Data Struictures (CS2110)</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id = "More">
+                    <ul>
+                        <li><span>Interested?</span><br>If you are interested in learning more about me, please click the link below:</li>
+                        <br>
+                        <a href="About.html" class="wavy"> 
+                            
+                            <span style="--i:1;">L</span>
+                            <span style="--i:2;">E</span>
+                            <span style="--i:3;">A</span>
+                            <span style="--i:4;">R</span>
+                            <span style="--i:5;">N</span>
+                            <span style="--i:6;">M</span>
+                            <span style="--i:7;">O</span>
+                            <span style="--i:8;">R</span>
+                            <span style="--i:9;">E</span>
+                            <span style="--i:10;">!</span>
+
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>   
+
+<!-- Projects section-->
+
+<div id="projects">
+
+    <div class="container">
+        <h1 class="sub-title hidden">My Projects</h1>
+
+        <div class="projects-list">
+
+            <div class="hidden">
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Projects</h2>
+            <p>Here you will obesrve all projects and works that I had developed with Python. From a currency exchange, to connect4!</p>
+            <a href="#">Learn more!</a>
+            </div>
+
+            <div class="hidden">
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Projects</h2>
+                <p>Here you will browse through projects that utilized intellij Java. Projects that involve various data strcutures, and more!</p>
+                <a href="#">Learn more!</a>
+            </div>
+
+            <div class="hidden">
+                <i class="fa-solid fa-code"></i>
+                <h2>Miscellaneous Projects</h2>
+                <p>Here you will find coding/development projects that involve different tools. For instance, I used unity to develop my first game!</p>
+                <a href="#">Learn more!</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title hidden">My Portfolio</h1>
+
+        <div class="portfolio-list hidden">
+
+            <div class="portfolioo">
+                <img src="images/ADIA.png">
+                <div class="layer">
+                    <h3>ADIA SCHOLARSHIP PROGRAM</h3>
+                    <p>Learn my story of how I attained my Scholarship to study abroad in the USA.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="portfolioo">
+                <img src="images/summer_program.png">
+                <div class="layer">
+                    <h3>PROGRAMS</h3>
+                    <p>View some of the programs I've participated in over the summers.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="portfolioo">
+                <img src="images/extracurriculars.png">
+                <div class="layer">
+                    <h3>EXTRACURRICULARS</h3>
+                    <p>Induldge in some the extracurricular activites I've partaken in.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+</div>
+
+<!-- CONTACT INFO SECTION ------->
+
+<div id="contact">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p> <i class="fa-regular fa-paper-plane"></i> Work Email: salemkham719@gmail.com</p>
+                <p> <i class="fa-regular fa-paper-plane"></i> Academic Email: sa948@cornell.edu</p>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.instagram.com/scythoros/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/scythoros.does/"><i class="fa-solid fa-shirt"></i></a>
+                <a href="https://www.linkedin.com/in/salem-alshamsi-630b782b7/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <a href="old_CV.pdf" download class="btn btn2">Download CV</a>
+
+            <div class="contact-right">
+
+                <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messaege"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright"><p> Copyright © Salem. </p></div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")  
+
+    function opentab(tabname){
+
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<!-------------- Side Menu Response script --------->
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px "; 
+    }
+    
+</script>
+
+
+<!--------------- Contact Form Script --------------->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5T9psUuJ1Abb_TZxIjAUteYmobBsygF6sNqQtpgkmS02GB76MNmXHh0AOuYaJv-39aw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<!---------- Intro animation script ---------------->
+
+<script src="intro.js"></script>
+
+</body>
+</html>     

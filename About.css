@@ -94,6 +94,13 @@ color: black;
   margin-bottom: 50px;
 }
 
+section.yellow{
+  background-color: #e9c228;
+}
+
+.mildspacer.yellow{
+  background-color: #e9c228;
+}
 .AESlider-wrapper {
 
   position: relative;
@@ -135,7 +142,7 @@ color: black;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #000000;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }

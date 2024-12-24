@@ -251,26 +251,49 @@ section.yellow{
 .slider p {
   margin-top: 500px;
   color: #3d3c38;
+  user-select: none;
 }
 
-
-/* ------------------------------ fashion -------------------- */
 
 
 /* ------------------------------ UP Button ------------------ */
 
+.UP {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .UP h1 {
   font-size: 50px;
-  margin-top: 20px;
-  position: relative;
+  margin-bottom: 20px
 }
 
 .icon {
-  margin-top: 30px;
-  
-} 
+  margin: 20px auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
 
-.icons
+.icon a {
+  font-size: 50px; /* Enlarge the button */
+  display: inline-block; /* Maintain button shape */
+  width: 100px; /* Set width */
+  height: 100px; /* Set height */
+  line-height: 100px; /* Vertically center the icon */
+  background-color: #ffffff; /* Button background color */
+  border-radius: 50%; /* Make it circular */
+  color: #000; /* Icon color */
+  text-align: center; /* Center the text/icon */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s; /* Add hover effect */
+}
+
+.icon a:hover {
+  background-color: #000; /* Change background on hover */
+  color: #ffffff; /* Change icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
 
   
 /* ------------------------------ waves ---------------------- */

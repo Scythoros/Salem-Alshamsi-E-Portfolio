@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hack', monospace; 
+    box-sizing: border-box; 
+  }
+
+  html{ 
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-color: #000;
+    color: #fff;
+
+  .midalign {
+    text-align: center;
+    font-size: larger;
+  }
+}
+
+/* --------------------------- Header Section ---------------- */
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  }    
+  
+  .container{
+  padding: 10px 10%;
+  }
+  
+  nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+  .emb{
+  width: 140px;
+  }
+  
+  nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  }
+  
+  nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  }
+  
+  nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after{
+  width: 100%;
+  }
+
+
+/* ---------------------------- TimeLine --------------------- */
+
+.timeline {
+  position: relative;
+  max-width: 1200px; /* Center the timeline within a specific width */
+  margin: 100px auto;
+}
+
+.containers {
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Distribute text and images */
+  margin-bottom: 50px;
+}
+
+.textbox {
+  flex: 1; /* Allow the text to take up one part of the available space */
+  max-width: 45%; /* Prevent textboxes from becoming too wide */
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for separation */
+}
+
+.textbox h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.textbox p {
+  margin-top: 10px;
+  line-height: 1.6; /* Improve readability */
+}
+
+.imagebox {
+  flex: 1; /* Allow the image to take up one part of the available space */
+  max-width: 45%; /* Prevent images from becoming too wide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagebox img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Alternate Text and Image Positions */
+.right-container .textbox {
+  order: 2; /* Textbox on the right */
+  text-align: left;
+}
+
+.right-container .imagebox {
+  order: 1; /* Image on the left */
+}
+
+.left-container .textbox {
+  order: 1; /* Textbox on the left */
+  text-align: right;
+}
+
+.left-container .imagebox {
+  order: 2; /* Image on the right */
+}
+
+/* Vertical Timeline Line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 70%;
+  background: #000000; /* Yellow color for better visibility */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Center Container (e.g., for "Currently") */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+
+
+/* ------------------------------ UP Button ------------------ */
+
+.UP {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.UP h1 {
+  font-size: 50px;
+  margin-bottom: 20px
+}
+
+.icon {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.icon a {
+  font-size: 50px; /* Enlarge the button */
+  display: inline-block; /* Maintain button shape */
+  width: 100px; /* Set width */
+  height: 100px; /* Set height */
+  line-height: 100px; /* Vertically center the icon */
+  background-color: #ffffff; /* Button background color */
+  border-radius: 50%; /* Make it circular */
+  color: #000; /* Icon color */
+  text-align: center; /* Center the text/icon */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s; /* Add hover effect */
+}
+
+.icon a:hover {
+  background-color: #000; /* Change background on hover */
+  color: #ffffff; /* Change icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+  
+/* ------------------------------ waves ---------------------- */
+
+.yellow {background: #e9c228;}
+
+.white {background: #fff;}
+
+.orange {background: #e97f28;}
+
+.grey {background: #3d3c38;}
+
+.dark {background: black;}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    }
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 232px;
+}
+
+.wave .shape-fill {
+    fill: #e9c228;
+}
+
+.stackedwave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.stackedwave svg {
+  position: relative;
+  display: block;
+  width: calc(198% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+.stackedwave .shape-fill {
+  fill: #E97F28;
+}
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mildspacer {
+  aspect-ratio: 960/70;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {background-image: url('./layer1.svg');}
+
+.layer2 {background-image: url('./layer2.svg');}
+
+.layer3 {background-image: url('./layer3.svg');}
+
+.layer4 {background-image: url('./layer4.svg');}
+
+.flip {transform: rotate(180deg);}
+
+.headtext {
+  margin-bottom: 100px;
+}
+
+
+/*---------------------- css for small screens ----------------------- */
+
+nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-device-width: 600px){
+  
+  #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul{
+    background: #e9c228;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+
+  .sub-title{
+    font-size: 40px;
+  }
+
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+
+  .about-col-2{
+    font-size: 14px;
+  }
+
+  .about-col-2 h1{
+    margin-bottom: 10px;
+  }
+
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  .contact-left p{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+}
+  
+
+/*---------------------- Hiddens! ---------------*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden { transition: none;}
+}
+
+.tab-titles:nth-child(1){
+  transition-delay: 6ms;
+}
+
+.tab-titles:nth-child(2){
+  transition-delay: 8ms;
+}
+
+.tab-titles:nth-child(3){
+  transition-delay: 12ms;
+}
+
+.tab-titles:nth-child(4){
+  transition-delay: 14ms;
+}
+
+
+
+    

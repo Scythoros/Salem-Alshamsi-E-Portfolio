@@ -26,6 +26,7 @@ body{
   );
   margin-top: 10%;
 }
+
 .slider .list{
   display: flex;
   width: 100%;
@@ -40,9 +41,21 @@ body{
   animation: autoRun 8s linear infinite;
   transition: filter 0.5s;
   animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) )!important;
+  padding: 10px;
 }
 .slider .list .item img{
   width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  object-fit: cover;
+ }
+
+ .slider .list .item img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
  }
 
 @keyframes autoRun{

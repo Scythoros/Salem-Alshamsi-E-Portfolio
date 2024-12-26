@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem Alshamsi Personal E-Portfolio</title>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+    <link rel="stylesheet" href="ExtraC.css">
+    <script src="https://kit.fontawesome.com/659fdd592e.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script defer src="interests.js"></script>
+ 
+
+    <style>
+
+        body {
+
+            margin: 0;
+            font-family: 'Hack', monospace;
+            color: #fff;
+            background-color: black;
+        }
+
+        section {
+
+            Position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 600px;
+            padding: 100px 20vw;
+        }
+
+    </style>
+
+ 
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" class="emb">
+                <ul id = "sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+
+    
+
+        <!--------------- landing ----------------->
+
+        <section class="dark">
+
+            <h1 class="headtext">Welcome To The Extracurriclars</h1> 
+
+            <p class="hidden midalign">Welcome to the Extracurriclars page, here you'll view most of the 
+                extracurricular activities that I had partaken in! 
+                <br>
+                <br>
+                Scroll down to see further.
+            </p>
+
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div> 
+
+        </section >
+
+        <div class="mildspacer yellow"></div>
+
+        <section class="yellow">
+
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">Fashion Magazine</h1>
+
+                <p class="hidden midalign">
+                    During the FAll of 2024 semester, I applied to Cornell's premium Fashion Magazine organization named THREADS.
+                    I specifically applied to be a photographer as well as a model!. Thankfully I was able to model for one of the shoots named 'Crosstown Traffic',
+                    as well as photograph for another shoot named 'Golden Years'. 
+                    <br>
+                    <br>
+                    Please click on the images to see the full picture!
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="slide-2" src="ExtraC/fash1.jpg">
+                        <img id="slide-3" src="ExtraC/fash2.jpg">
+                        <img id="slide-4" src="ExtraC/fash3.jpg">
+                        <img id="slide-5" src="ExtraC/fash4.jpg">
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+   
+                    </div>
+
+                </div>
+
+                <div id="lightbox">
+                    <img id="lightbox-img" src="" alt="Full Image">
+                    <span id="close-lightbox" onclick="closeLightbox()">×</span>
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+            
+            
+            <div class="stackedwave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+
+        <div class="mildspacer orange"></div>
+
+        <section class="orange">
+            
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">CCRA - Computer Hardware Salvation</h1>
+
+                <p class="hidden midalign">
+                   CCRA is an amazing club in which students who are enthusiastic about computer hardware,
+                    can harness their knowledge of computers for a great cause! 
+                    In CCRA all computer compenants that are salvaged from old PC's are used to build and complete 
+                    newer systems that are then donated to schools and charity organizations that need them!
+                    <br>
+                    <br>
+                    Personally, I deeply love building computers, I see the activity as a fun and intruging one! My personal Gaming pc Was built by myself. 
+                    Thus, naturally I gravitated towards CCRA as I was practicing one of my passions, while for a charitable cause!
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="sl-1" src="ExtraC/ccra-1.JPG">
+                        <img id="sl-2" src="ExtraC/ccra-2.JPG">
+                        <img id="sl-3" src="ExtraC/ccra-3.JPG">
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#sl-1"></a>
+                        <a href="#sl-2"></a>
+                        <a href="#sl-3"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+        <div class="spacer layer3"></div>
+
+        <section class="dark">
+
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">DGA - Game developement Club</h1>
+
+                <p class="hidden midalign">
+
+                    I find Game developement to be one of the prime reasons as to why I even started learning CS. 
+                    Therefore, I found it to be a "no brainer" to join the game development club!
+                    <br>
+                    <br>
+                    Amongst the many workshops and activities that the club held, 
+                    I found myself attending one of their game jams as a means to immersing myself in the game dev world! 
+                    Where I learned to use Unity on the fly, or really for 24 hrs we were given to create anything themed under Valentines day!
+
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="sli-2" src="ExtraC/DEV.jpg">
+                        <img id="sli-3" src="images_cycle/cycle4.jpg">
+
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#sli-2"></a>
+                        <a href="#sli-3"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="spacer layer4"></div>
+
+        <section class="grey">
+
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">Arab Student Community</h1>
+
+                <p class="hidden midalign">
+
+                    The Arab student Community In Cornell is a grand, welcoming, and riveting one!
+                    I made it a must to attend as many events
+                    held by the community as it is a great oppurtunity to meet and learn about 
+                    many students from various backgrounds!
+                    I'm happy to even say that I hade made some of my best friends in Uni due to attending these events, 
+                    so I will always be grateful for them!
+
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="slid-2" src="ExtraC/asa2.jpg">
+                        <img id="slid-3" src="ExtraC/asa2.PNG">
+                        <img id="slid-4" src="ExtraC/asa3.jpg">
+                        <img id="slid-5" src="images_cycle/cycle3.jpg">
+                        <img id="slid-6" src="images_cycle/cycle8.jpg">
+
+
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#slid-2"></a>
+                        <a href="#slid-3"></a>
+                        <a href="#slid-4"></a>
+                        <a href="#slid-5"></a>
+                        <a href="#slid-6"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="mildspacer"></div>
+
+        <section class="dark">
+
+            <div class="Origin">
+
+                <h1 class="headtext1 hidden midalign">Photography</h1>
+
+                <p class="hidden midalign">
+
+                    Throughout my life, I always had that cinematic itch in which I would see a certain 'scene' 
+                    appear before me, in which I naturally reach for my camera, and take the shot!
+                    <br>
+                    <br>
+                    Please, click on the images to see them in FULL GLORY! 
+
+                </p>
+
+                <div class="AESlider-wrapper hidden"> 
+                    
+                    <div class="AESlider">
+
+                        <img id="slidee-1" src="ExtraC/pho (1).JPG">
+                        <img id="slidee-2" src="ExtraC/pho (2).JPG">
+                        <img id="slidee-3" src="ExtraC/pho (4).JPG">
+                        <img id="slidee-4" src="ExtraC/pho (12).JPG">
+                        <img id="slidee-5" src="ExtraC/pho (5).JPG">
+                        <img id="slidee-6" src="ExtraC/pho (6).JPG">
+                        <img id="slidee-7" src="ExtraC/pho (7).JPG">
+                        <img id="slidee-8" src="ExtraC/pho (8).JPG">
+                        <img id="slidee-9" src="ExtraC/pho (9).JPG">
+                        <img id="slidee-10" src="ExtraC/pho (10).JPG">
+                        <img id="slidee-11" src="ExtraC/pho (11).JPG">
+                        <img id="slidee-12" src="ExtraC/pho (13).JPG">
+                        <img id="slidee-13" src="ExtraC/pho (14).JPG">
+                        <img id="slidee-14" src="ExtraC/pho (15).JPG">
+
+
+                    </div>
+
+                    <div class="Slider-nav">
+
+                        <a href="#slidee-1"></a>
+                        <a href="#slidee-2"></a>
+                        <a href="#slidee-3"></a>
+                        <a href="#slidee-4"></a>
+                        <a href="#slidee-5"></a>
+                        <a href="#slidee-6"></a>
+                        <a href="#slidee-7"></a>
+                        <a href="#slidee-8"></a>
+                        <a href="#slidee-9"></a>
+                        <a href="#slidee-11"></a>
+                        <a href="#slidee-12"></a>
+                        <a href="#slidee-13"></a>
+                        <a href="#slidee-14"></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </section >
+
+        <section class="black">   
+
+            <div class="UP">
+                <h1>Back To The top</h1>
+
+                <div class="icon">
+                    
+                    <a href="#header"> <i class="fa-solid fa-circle-arrow-up"></i> </a> </p>
+    
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    
+
+
+
+</body>

@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hack', monospace; 
+    box-sizing: border-box; 
+  }
+
+  html{ 
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-color: #000;
+    color: #fff;
+}
+
+/* --------------------------- Header Section ---------------- */
+
+#header{
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}    
+
+.container{
+padding: 10px 10%;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.emb{
+width: 140px;
+}
+
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 10px 20px;
+}
+
+nav ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+
+nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: #ffffff;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+width: 100%;
+}
+
+.header-text{
+margin-top: 20%;
+font-size: 30px;
+-webkit-text-stroke: 1.5px #080808; 
+}
+
+.header-text h1{
+font-size: 60px;
+margin-top: 20px;
+}
+
+.header-text h1 span{
+color: black;
+}
+
+.midalign {
+  text-align: center;
+  font-size: larger;
+}
+
+.headtext1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  
+  section.yellow{
+    background-color: #e9c228;
+  }
+  
+  .mildspacer.yellow{
+    background-color: #e9c228;
+  }
+  .AESlider-wrapper {
+  
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+  
+  }
+  
+  .AESlider {
+    user-select: none;
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    margin-top: 100px;
+  }
+  
+  .AESlider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  
+  .Slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .Slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  
+  .Slider-nav a:hover { 
+    opacity: 1;
+  }
+  
+  .AESlider::-webkit-scrollbar {display: none;}
+
+
+  #lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#lightbox.show {
+    opacity: 1;
+    pointer-events: all;
+}
+  
+
+  
+  .CSpand {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  
+    gap: 1rem;
+    width: 35rem;
+  
+  }
+  
+  .card {
+    user-select: none;
+    position: relative;
+    left: 0;
+    width: 1%;
+    border-radius: 1rem;
+    
+    height: 20rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+  
+    box-shadow: 0 5 12px rgba(0, 0, 0, .3);
+    flex: .15;
+  
+  }
+  
+  .card img {
+    user-select: none;
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+  
+  }
+  .card:hover {
+  
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+  
+  }
+  
+  .btn{
+
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .btn:hover{
+    background-color: #000000;
+  }
+  
+
+/* ------------------------------ UP Button ------------------ */
+
+.UP {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.UP h1 {
+  font-size: 50px;
+  margin-bottom: 20px
+}
+
+.icon {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.icon a {
+  font-size: 50px; /* Enlarge the button */
+  display: inline-block; /* Maintain button shape */
+  width: 100px; /* Set width */
+  height: 100px; /* Set height */
+  line-height: 100px; /* Vertically center the icon */
+  background-color: #ffffff; /* Button background color */
+  border-radius: 50%; /* Make it circular */
+  color: #000; /* Icon color */
+  text-align: center; /* Center the text/icon */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s; /* Add hover effect */
+}
+
+.icon a:hover {
+  background-color: #000; /* Change background on hover */
+  color: #ffffff; /* Change icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+  
+/* ------------------------------ waves ---------------------- */
+
+.yellow {background: #e9c228;}
+
+.white {background: #fff;}
+
+.orange {background: #e97f28;}
+
+.grey {background: #3d3c38;}
+
+.dark {background: black;}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    }
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 232px;
+}
+
+.wave .shape-fill {
+    fill: #e9c228;
+}
+
+.stackedwave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.stackedwave svg {
+  position: relative;
+  display: block;
+  width: calc(198% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+.stackedwave .shape-fill {
+  fill: #E97F28;
+}
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mildspacer {
+  aspect-ratio: 960/70;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {background-image: url('./layer1.svg');}
+
+.layer2 {background-image: url('./layer2.svg');}
+
+.layer3 {background-image: url('./layer3.svg');}
+
+.layer4 {background-image: url('./layer4.svg');}
+
+.flip {transform: rotate(180deg);}
+
+.headtext {
+  margin-bottom: 100px;
+}
+
+
+/*---------------------- css for small screens ----------------------- */
+
+nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-device-width: 600px){
+  
+  #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul{
+    background: #e9c228;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+
+  .sub-title{
+    font-size: 40px;
+  }
+
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+
+  .about-col-2{
+    font-size: 14px;
+  }
+
+  .about-col-2 h1{
+    margin-bottom: 10px;
+  }
+
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  .contact-left p{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+}
+  
+
+/*---------------------- Hiddens! ---------------*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden { transition: none;}
+}
+
+.tab-titles:nth-child(1){
+  transition-delay: 6ms;
+}
+
+.tab-titles:nth-child(2){
+  transition-delay: 8ms;
+}
+
+.tab-titles:nth-child(3){
+  transition-delay: 12ms;
+}
+
+.tab-titles:nth-child(4){
+  transition-delay: 14ms;
+}

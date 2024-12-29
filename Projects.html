@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salem Alshamsi Personal E-Portfolio</title>
     <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
-    <link rel="stylesheet" href="ExtraC.css">
+    <link rel="stylesheet" href="Projects.css">
     <script src="https://kit.fontawesome.com/659fdd592e.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
     <script defer src="interests.js"></script>
+    <script defer src="projects.js"></script>
  
 
     <style>
@@ -59,5 +60,186 @@
 
         </div>
 
+        <!--------------- landing ----------------->
+
+        <section class="dark">
+
+            <h1 class="headtext">Welcome To The Projects Page</h1> 
+
+            <p class="hidden midalign">
+                Here you will see most of the projects I've worked on, involving various languages,
+                 ranging from python, to even OCaml. Some of these projects were actually assignments from the CS courses I had taken, therefore I can only share so much...
+                <br>
+                <br>
+                Regardless, remember to click on images to see them fully, so scroll down to see further.
+            </p>
+
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div> 
+            
+        </section >
+
+        <div class="mildspacer yellow"></div>
+
+        <section class="project-section python-projects yellow">
+            <h1>Python Projects:</h1>
+
+            <div class="image-slider-container"  id="python-slider">
+                <!-- Main Image Slider -->
+                <div class="main-slider">
+                    <img id="python-current-image" src="projects_img/pytlogo.png" alt="Project Image">
+                    <h3 id="python-current-head">Hope you find these interesting</h3>
+                    <p id="python-current-description"> Here you'll find projects I've coded in python! Most if not all edited using Pulsar!</p>
+                </div>
+            
+                <!-- Thumbnail Row -->
+                <div class="thumbnail-row" id="python-thumbnails">
+                    <img class="thumbnail" src="projects_img/pyt1.PNG" data-head="Project 1 | Currency Exchange" 
+                    data-description="For one of my first projects in python, I worked on a Currency Exchange program that operates in the windows powershell. 
+                    It uses a JSON api so as to pull data from the public">
+
+                    <img class="thumbnail" src="projects_img/pyt2.PNG" data-head="Project 2 | Color model Generator " 
+                    data-description="Another Project I worked on is a Color Model generator, in which you can enter certain values, 
+                    either in the RGB or HSV settings to get the color palette desired.">
+
+                    <img class="thumbnail" src="projects_img/pyt3.PNG" data-head="Project 3 | Polygon/graphics Drawing application" 
+                    data-description="This project is all about drawing shapes and polygons either manually or automatically using commands. 
+                    Also known as a 'turtle' drawing application. This project served as my introduction to applying the concept of Recursion in my programming projects!">
+
+                    <img class="thumbnail" src="projects_img/pyt4.png" data-head="Project 4 | Connect4 Clone"
+                     data-description="One of my first 'Game' projects that I had worked on was Connect4! 
+                     During the completion of this project I learned how to work with GUI applications, classes, and a bit of an introductory level of Object Oriented programming.">
+
+                    <img class="thumbnail" src="projects_img/pyt5.PNG" data-head="Project 5 | Invaders Clone" 
+                    data-description="My last Python project was an Invaders clone! It was the biggest project that I had worked on when I started learning CS, 
+                    it served as the culmination of all that I had learned from my intro course.">
+                </div>
+            </div>
+            
+
+            <div class="spacer"></div>
+            
+            
+            <div class="stackedwave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+        
+        <div class="mildspacer orange"></div>
+
+        <section class="project-section java-projects orange">
+            <h1>Java Projects:</h1>
+
+            <div class="image-slider-container" id="java-slider">
+                <!-- Main Image Slider -->
+                <div class="main-slider">
+                    <img id="java-current-image" src="projects_img/ja1.png" alt="Project Image">
+                    <h3 id="java-current-head">Java is quite a ride!</h3>
+                    <p id="java-current-description"> Here you'll find projects I've coded in java! I used JetBrains Intellij to complie and test my code!</p>
+                </div>
+            
+                <!-- Thumbnail Row -->
+                <div class="thumbnail-row" id="java-thumbnails">
+
+                    <img class="thumbnail" src="projects_img/ja2.PNG" data-head="Project 1 | Student Course Manager" 
+                    data-description="One of my first projects made in Java was a student course manager, 
+                    essentially a simpler version of 'CMS'; A student course/grade manager used by Cornell University.">
+
+                    <img class="thumbnail" src="projects_img/ja3.PNG" data-head="Project 2 | RPN Calculator/CSV Calculator" 
+                    data-description="In this project I learned and implemented a 
+                    Reverse Polish Notation Calculator that was used to calculate and evaluate 
+                    postfix formulas in spreadsheets.">
+
+                    <img class="thumbnail" src="projects_img/jav4.PNG" data-head="Project 3 | Interactive Image Selector (Image Editor, Custom Sticker Creator)" 
+                    data-description="The Interactive Image Selector was and is probably one of the most rewarding project I had worked. Primarily because 
+                    I implemented many features and functions that I was able to visually, and immediatly see work when done correctly. 
+                    I learned to apply the knowledge of graphs and trees to implement the image pathfinding feature, to make 'smart' selections of what to select.">
+
+                </div>
+
+                
+                <div id="lightbox">
+                    <img id="lightbox-img" src="" alt="Full Image">
+                    <span id="close-lightbox" onclick="closeLightbox()">×</span>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="mildspacer grey"></div>
+
+        <section class="project-section misc-projects grey">
+            <h1>Miscellaneous Projects:</h1>
+    
+            <div class="image-slider-container" id="misc-slider">
+                <!-- Main Image Slider -->
+                <div class="main-slider">
+                    <img id="misc-current-image" src="projects_img/misclogo.jpg" alt="Project Image">
+                    <h3 id="misc-current-head">Jack of All Trades!</h3>
+                    <p id="misc-current-description"> Here you'll find various projects! These projects use various languages, from OCaml to even Unity (really an engine but...)!</p>
+                </div>
+            
+                <!-- Thumbnail Row -->
+                <div class="thumbnail-row" id="misc-thumbnails">
+    
+                    <img class="thumbnail" src="projects_img/misc1.PNG" data-head="Project 1 | Halloramma" 
+                    data-description="A 2D pixel game that I had deveopled (or attempted to) for a 24 hour game jam! 
+                    The concept is that you attempt to pass through the right set of doors to reach your date, 
+                    in the shortest amount of time possible. I used Unity to try and implement this game!">
+    
+                    <img class="thumbnail" src="projects_img/misc2.PNG" data-head="Project 2 | Sands of Chance" 
+                    data-description="Sands of chance is a final project I had worked on with a couple of friends of mine. 
+                    In which the user has an account they can use to place bids on upcoming sports matches. 
+                    I would like to emphasize that I had primarily worked on the 'driver' program, aka the user interface. 
+                    Lastly, I would like to add that this project was developed in OCaml">
+    
+                    <img class="thumbnail" src="projects_img/misc3.PNG" data-head="Project 3 | Group Chat App" 
+                    data-description="Another OCaml Project I worked on was a group chat application, 
+                    It involved the use of the Lwt library/module, as well required the utilization of what I learned about monads, 
+                    and concurrency! I enjoyed working on this project as it seemed like a fun thing to make.">
+    
+                </div>
+    
+            </div>
+        </section>
+
+
+        <div class="mildspacer dark"></div>
+        <section id="github-section" class="dark">
+            <h1>Visit My GitHub</h1>
+            <p>Explore my projects, contributions, and repositories. Click below to visit my GitHub profile.</p>
+        
+            <div class="github-link">
+                <a href="https://github.com/Scythoros" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>View My GitHub</span>
+                </a>
+            </div>
+
+        </section>
+
+        <div class="UP">
+            <h1>Back To The top</h1>
+
+            <div class="icon">
+                
+                <a href="#header"> <i class="fa-solid fa-circle-arrow-up"></i> </a> </p>
+
+            </div>
+        </div>
+        
+
+
     </div>
+
+
+
 </body>

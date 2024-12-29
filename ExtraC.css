@@ -150,6 +150,7 @@ color: black;
   
   .AESlider::-webkit-scrollbar {display: none;}
 
+ /* ------------------------ Lighthouse --------------------- */
 
   #lightbox {
     position: fixed;
@@ -187,7 +188,7 @@ color: black;
 }
   
 
-  
+
   .CSpand {
     user-select: none;
     display: flex;

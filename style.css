@@ -66,6 +66,34 @@ body{
   }
 }
 
+/* ------------------------------ Books Slider ---------------------- */
+
+/* make room for caption inside each sliding card */
+.reviews-slider .item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+.reviews-slider .item img {
+  flex: 0 0 auto;
+  height: 70%;           /* image takes up 70% of the card height */
+  object-fit: cover;
+}
+
+.reviews-slider .item .caption {
+  flex: 1 1 auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 /* ------------------------------ Header Section -------------------- */
 
 #header{
@@ -227,10 +255,6 @@ flex-wrap: wrap;
 }
 
 
-
-
-
-
 /* -----------------------Projects section----------------------*/
 
 #Projects{
@@ -365,6 +389,54 @@ flex-wrap: wrap;
 .btn:hover{
   background-color: #e9c228;
 }
+
+/* ---------------- Book Reviews Section ---------------- */
+#reviews {
+  padding: 80px 0;
+  background-color: #080808;
+  color: #fff;
+}
+
+#reviews .sub-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.review-item {
+  background-color: #000000;
+  padding: 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.review-item:hover {
+  transform: translateY(-4px);
+  background-color: #333;
+}
+
+.review-item .book-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25em;
+}
+
+.review-item .book-author {
+  font-style: italic;
+  margin-bottom: 0.75em;
+  color: #ccc;
+}
+
+.review-item .review-text {
+  color: #e0e0e0;
+}
+
 
 /* -------------CONTACT SECTION --------------*/
 
@@ -646,7 +718,58 @@ nav .fa-solid{
   transition-delay: 14ms;
 }
 
+/* ---------- Modal overlay & box --------- */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
 
+.modal.show {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.modal-box {
+  position: relative;
+  background: #1a1a1a;
+  color: #fff;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-top: 0;
+}
+
+.modal-description,
+.modal-thoughts {
+  margin-bottom: 1.25rem;
+}
 
 
 

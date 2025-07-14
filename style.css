@@ -751,6 +751,21 @@ nav .fa-solid{
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+/* ——— Hide scrollbar in the book-details modal ——— */
+.modal-box {
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+/* WebKit browsers (Chrome, Safari, Opera) */
+.modal-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
 .modal-close {
   position: absolute;
   top: 0.25rem;
